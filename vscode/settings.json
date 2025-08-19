@@ -1,0 +1,225 @@
+{
+  "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "workbench.colorCustomizations": {
+    "editorIndentGuide.background1": "#00000010",
+    "editorIndentGuide.activeBackground1": "#00000030" // Grey with some transparency.
+  },
+
+  // Editor
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "Hack Nerd Font Mono",
+  "editor.fontSize": 13.5,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontWeight": 200,
+  "editor.fontLigatures": false,
+  "editor.lineHeight": 1.7,
+  "editor.fontVariations": true,
+  "editor.experimentalWhitespaceRendering": "font",
+  "editor.letterSpacing": 0.25,
+  "editor.lineNumbers": "relative",
+  "editor.showFoldingControls": "always",
+  "editor.stickyScroll.enabled": false,
+  "editor.largeFileOptimizations": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.renderFinalNewline": "on",
+  "files.insertFinalNewline": true,
+
+  // Terminal
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.lineHeight": 1.25,
+  "terminal.integrated.letterSpacing": 1,
+
+  // Explorer
+  "explorer.confirmDragAndDrop": false,
+
+  // Security
+  "security.promptForLocalFileProtocolHandling": true,
+
+  // JavaScript / TypeScript
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.sdk": "node_modules/typescript/lib",
+  // CSS
+  "css.lint.unknownAtRules": "ignore",
+
+  // Python
+  "python.languageServer": "Pylance",
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/__pycache__": true
+  },
+
+  // Extensions
+  // Git
+  "git.autofetch": true,
+
+  // CSpell
+  "cSpell.userWords": [
+    "ainvoke",
+    "Andrés",
+    "Aplicacion",
+    "basehub",
+    "canelones",
+    "chakra",
+    "clsx",
+    "codegen",
+    "customerio",
+    "Customerio",
+    "datamodel",
+    "Downlaod",
+    "Formik",
+    "helpscout",
+    "hibob",
+    "Hibob",
+    "JSONLD",
+    "langgraph",
+    "LANGGRAPH",
+    "Logica",
+    "lucide",
+    "Martínez",
+    "mito",
+    "mixlab",
+    "mongodb",
+    "nextjs",
+    "openai",
+    "OPENAI",
+    "Precargar",
+    "prismic",
+    "pyve",
+    "Signup",
+    "supabase",
+    "Supabase",
+    "svgs",
+    "tailwindcss",
+    "tanstack",
+    "trackclub",
+    "typecheck",
+    "typeorm",
+    "Upsert"
+  ],
+  "cSpell.language": "en,es-ES",
+
+  // Vim
+  "vim.leader": " ",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "]"],
+      "commands": ["editor.action.marker.nextInFiles"],
+      "silent": true
+    }
+  ],
+  "vim.handleKeys": {
+    "<D-c>": false
+  },
+  "vim.foldfix": true,
+
+  "auto-close-tag.activationOnLanguage": [
+    "javascriptreact",
+    "typescriptreact",
+    "markdown",
+    "HTML (EEx)",
+    "HTML (Eex)"
+  ],
+  "redhat.telemetry.enabled": false,
+  "cursor.cpp.enablePartialAccepts": true,
+  "editor.foldingImportsByDefault": false,
+  "editor.gotoLocation.alternativeImplementationCommand": "editor.action.goToImplementation",
+  "editor.gotoLocation.alternativeReferenceCommand": "editor.action.goToReferences",
+  "editor.linkedEditing": true,
+  "editor.scrollbar.verticalScrollbarSize": 12,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.minimap.autohide": true,
+  "editor.inlineSuggest.enabled": false,
+  "editor.suggest.insertMode": "replace",
+  "workbench.reduceMotion": "on",
+  "breadcrumbs.icons": false,
+  "breadcrumbs.showArrays": false,
+  "breadcrumbs.showBooleans": false,
+  "breadcrumbs.showClasses": false,
+  "breadcrumbs.showConstructors": false,
+  "breadcrumbs.showConstants": false,
+  "breadcrumbs.showEnumMembers": false,
+  "breadcrumbs.showEnums": false,
+  "breadcrumbs.showEvents": false,
+  "breadcrumbs.showFields": false,
+  "breadcrumbs.showFiles": false,
+  "breadcrumbs.showFunctions": false,
+  "breadcrumbs.showInterfaces": false,
+  "breadcrumbs.showKeys": false,
+  "breadcrumbs.showMethods": false,
+  "breadcrumbs.showModules": false,
+  "breadcrumbs.showNamespaces": false,
+  "breadcrumbs.showNull": false,
+  "breadcrumbs.showNumbers": false,
+  "breadcrumbs.showObjects": false,
+  "breadcrumbs.showOperators": false,
+  "breadcrumbs.showPackages": false,
+  "breadcrumbs.showProperties": false,
+  "breadcrumbs.showStrings": false,
+  "breadcrumbs.showStructs": false,
+  "breadcrumbs.showTypeParameters": false,
+  "breadcrumbs.showVariables": false,
+  "breadcrumbs.symbolPath": "last",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.excludeDirty": true,
+  "workbench.editor.restoreViewState": false,
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.centerLayout": false,
+  "workbench.sash.size": 2,
+  "breadcrumbs.enabled": false,
+  "cursor.cpp.disabledLanguages": ["log"],
+  "roo-cline.allowedCommands": [
+    "npm test",
+    "npm install",
+    "tsc",
+    "git log",
+    "git diff",
+    "git show"
+  ],
+  "update.releaseTrack": "prerelease",
+  "gitlens.graph.layout": "editor",
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "cursor.composer.shouldAllowCustomModes": true,
+  "python.analysis.autoImportCompletions": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.env.osx": {},
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "cursor.terminal.usePreviewBox": true,
+  "workbench.colorTheme": "Oscura Dusk"
+}
