@@ -10,7 +10,7 @@
 # @raycast.packageName Window Management
 
 # Documentation:
-# @raycast.description Focus Kitty (left 1/3) + Zed (right 2/3)
+# @raycast.description Focus Kitty (left 40%) + Cursor (right 60%)
 # @raycast.author Andres
 
 osascript <<'EOF'
@@ -21,19 +21,19 @@ set frame to screen's visibleFrame()
 set screenWidth to (item 1 of item 2 of frame) as integer
 set screenHeight to (item 2 of item 2 of frame) as integer
 
-set thirdWidth to screenWidth div 3
-set twoThirdsWidth to screenWidth - thirdWidth
+set kittyWidth to (screenWidth * 40 / 100) as integer
+set cursorWidth to screenWidth - kittyWidth
 
 tell application "System Events"
     tell process "kitty"
         set frontmost to true
         set position of window 1 to {0, 25}
-        set size of window 1 to {thirdWidth, screenHeight}
+        set size of window 1 to {kittyWidth, screenHeight}
     end tell
-    tell process "Zed"
+    tell process "Cursor"
         set frontmost to true
-        set position of window 1 to {thirdWidth, 25}
-        set size of window 1 to {twoThirdsWidth, screenHeight}
+        set position of window 1 to {kittyWidth, 25}
+        set size of window 1 to {cursorWidth, screenHeight}
     end tell
 end tell
 EOF
